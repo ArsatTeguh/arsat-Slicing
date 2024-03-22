@@ -21,7 +21,7 @@ function Footer() {
             className="w-[169px] h-[47px]"
             alt="foto"
           />
-          <p className="text-md max-w-[80%] text-zinc-300">
+          <p className="text-md lg:max-w-[80%] w-full text-zinc-300">
             SobatBangun adalah platform digital dari SIG yang bergerak dengan
             misi mengembangkan proses pembangunan dan renovasi rumah secara
             lebih baik serta berkelanjutan.
