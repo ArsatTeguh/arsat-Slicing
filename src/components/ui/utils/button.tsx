@@ -10,14 +10,14 @@ function Button({ roles }: Props) {
       {roles === 'detail' ? (
         <button
           type="button"
-          className="py-[14px] text-[16px] font-medium text-white px-4 w-full bg-red-600 rounded"
+          className="lg:py-[14px] py-3 text-[14px] lg:text-[16px] font-medium text-white px-4 w-full bg-red-600 rounded"
         >
           Konsultasi Sekarang
         </button>
       ) : (
         <button
           type="button"
-          className="py-2 text-[16px] text-red-600 font-medium bg-white px-4 w-full  border-red-600 border-[1px] rounded"
+          className="py-2 lg:text-[16px] text-[14px] text-red-600 font-medium bg-white px-4 w-full  border-red-600 border-[1px] rounded"
         >
           Lihat Detail
         </button>

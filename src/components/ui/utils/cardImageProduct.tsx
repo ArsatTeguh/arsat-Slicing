@@ -10,11 +10,11 @@ function CardImageProduct({ data }: { data: TampilanProps }) {
         width={600}
         height={600}
         alt=""
-        className="w-[261px] lg:h-[201px] h-[170px] "
+        className="w-[261px] lg:h-[201px] h-[130px] "
       />
 
-      <div className="flex flex-col gap-1">
-        <p className="lg:text-xl text-lg font-bold">{data?.room}</p>
+      <div className="flex flex-col gap-1 ">
+        <p className="lg:text-xl text-md font-bold text-zinc-800">{data?.room}</p>
         <p className="text-sm">{data?.size}</p>
       </div>
     </div>

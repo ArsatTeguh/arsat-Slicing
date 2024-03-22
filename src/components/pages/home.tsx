@@ -27,9 +27,9 @@ function HomePage() {
           </span>
         </div>
       </div>
-      <div className="lg:px-8 px-4 lg:pt-8 pt-4">
+      <div className="lg:px-8 px-2 md:px-4 lg:pt-8 pt-4">
         <DetailProduct />
-        <p className="font-semibold text-zinc-800 text-2xl lg:pt-24 pt-8 pb-6">
+        <p className="font-semibold text-zinc-800 text-xl lg:text-2xl lg:pt-24 pt-8 pb-6">
           Desain Lainnya oleh Studio SAe
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 mx-auto">

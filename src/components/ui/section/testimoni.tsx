@@ -10,7 +10,7 @@ function Testimoni() {
       </span>
       <div className="flex flex-col gap-1">
         <div className="flex flex-items gap-2 ">
-          <span className="text-md font-medium">Budi Setiadi</span>
+          <span className="text-md font-medium text-zinc-800">Budi Setiadi</span>
           <span className="text-zinc-500">|</span>
           <div className="flex items-center gap-1">
             <span className="text-xl text-[#FBBC05]">

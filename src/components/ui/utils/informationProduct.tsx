@@ -8,13 +8,13 @@ function InformationProduct(data: PropsDetail) {
     <div className="flex flex-col gap-4 w-full">
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-4">
-          <p className="text-xl font-semibold"> {data?.title} </p>
-          <span className={`px-1 rounded-full bg-zinc-200 text-md block ${data?.role === 'detail' && 'hidden'}`}>
+          <p className="lg:text-xl text-lg font-semibold text-zinc-800"> {data?.title} </p>
+          <span className={`px-1 rounded-full text-zinc-800 bg-zinc-200 text-md block ${data?.role === 'detail' && 'hidden'}`}>
             {' '}
             Scandinavian{' '}
           </span>
         </div>
-        <p className="text-sm">{data?.design}</p>
+        <p className="text-sm text-zinc-800">{data?.design}</p>
       </div>
       <div
         className={`gap-6 items-center ${
@@ -27,8 +27,8 @@ function InformationProduct(data: PropsDetail) {
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-sm font-medium">{data?.jenis}</p>
-          <div className="flex items-center gap-2">
-            <span className="bg-red-600 p-[2px] rounded-full text-white">
+          <div className="flex items-center lg:gap-2 gap-1">
+            <span className="bg-red-600 p-[1px] lg:p-[2px] rounded-full text-white">
               <MdDone />
             </span>
             <p className="text-sm text-red-600">{data?.tipe} </p>
@@ -40,7 +40,7 @@ function InformationProduct(data: PropsDetail) {
         {data?.detail?.map((item) => (
           <div
             key={item.title}
-            className="flex items-center gap-1 flex-col text-nowrap"
+            className="flex  items-center gap-1 flex-col text-nowrap"
           >
             <p className="text-red-600 font-bold text-2xl lg:text-xl">
               {item.icon}
@@ -55,7 +55,7 @@ function InformationProduct(data: PropsDetail) {
       <span className="h-[1px] bg-zinc-200 w-full block" />
       <div className="flex flex-col gap-1">
         <p className="text-sm">Harga Desain</p>
-        <p className="text-[32px] font-semibold">{data?.price}</p>
+        <p className="lg:text-[32px] text-[25px] font-semibold text-zinc-800">{data?.price}</p>
         <p className="text-sm text-zinc-500">
           Harga konstruksi mulai dari Rp.560.000.000
         </p>
