@@ -2,7 +2,7 @@
 
 import { navigationList } from '@/lib/navigationList';
 import { usePathname } from 'next/navigation';
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown } from 'react-icons/io';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -17,7 +17,7 @@ function Navbar({ children }: { children: React.ReactNode }) {
         <div className=" flex items-center justify-between lg:py-10 py-8 lg:px-16 px-8 ">
           <div className="logo ">
             <Image
-              src="/Logo.png"
+              src="/logo.png"
               alt="logo"
               width={500}
               height={500}
@@ -40,7 +40,10 @@ function Navbar({ children }: { children: React.ReactNode }) {
                       role="button"
                     >
                       {item.title}
-                      <span> <IoIosArrowDown /> </span>
+                      <span>
+                        {' '}
+                        <IoIosArrowDown />{' '}
+                      </span>
                     </div>
                     <ul
                       tabIndex={index}
