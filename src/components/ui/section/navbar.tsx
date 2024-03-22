@@ -2,6 +2,7 @@
 
 import { navigationList } from '@/lib/navigationList';
 import { usePathname } from 'next/navigation';
+import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -34,11 +35,12 @@ function Navbar({ children }: { children: React.ReactNode }) {
                     <div
                       className={`${
                         item.title === 'Produk & Layanan' && 'text-red-600'
-                      }`}
+                      } flex items-center gap-2`}
                       tabIndex={0}
                       role="button"
                     >
                       {item.title}
+                      <span> <IoIosArrowDown /> </span>
                     </div>
                     <ul
                       tabIndex={index}
