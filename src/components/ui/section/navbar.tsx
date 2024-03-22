@@ -17,7 +17,7 @@ function Navbar({ children }: { children: React.ReactNode }) {
         <div className=" flex items-center justify-between lg:py-10 py-8 lg:px-16 px-8 ">
           <div className="logo ">
             <Image
-              src="/logo.png"
+              src="/Logo.png"
               alt="logo"
               width={500}
               height={500}
