@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import { Poppins } from 'next/font/google';
+import Navbar from '@/components/ui/section/navbar';
+import Footer from '@/components/ui/section/footer';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -19,10 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en">
       <body className={poppins.className}>
-        {/* letakan CustomProvider disini jika ingin menggunakan redux-toolkit */}
-        {children}
+        <Navbar>
+          {/* letakan CustomProvider disini jika ingin menggunakan redux-toolkit */}
+          {children}
+          <Footer />
+        </Navbar>
       </body>
     </html>
   );
