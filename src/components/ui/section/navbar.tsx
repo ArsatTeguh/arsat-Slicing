@@ -8,6 +8,7 @@ import Link from 'next/link';
 import React from 'react';
 import BreadCrumbs from '../utils/breadCrumbs';
 import Sidebar from '../utils/sidebar';
+import logo from '@/public/logo-sobat.png';
 
 function Navbar({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -17,7 +18,7 @@ function Navbar({ children }: { children: React.ReactNode }) {
         <div className=" flex items-center justify-between lg:py-10 py-8 lg:px-16 px-8 ">
           <div className="logo ">
             <Image
-              src="/logo.png"
+              src={logo}
               alt="logo"
               width={500}
               height={500}
